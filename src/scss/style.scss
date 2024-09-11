@@ -1,5 +1,5 @@
 @use "sass:math";
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap");
 @mixin tb {
   @media (max-width: 1280px) {
     @content;
@@ -7,7 +7,7 @@
 }
 
 @mixin sp {
-  @media (max-width: 640px) {
+  @media (max-width: 768px) {
     @content;
   }
 }
@@ -19,8 +19,8 @@
     --viewport: 1200;
   }
 
-  @media (max-width: 640px) {
-    --viewport: 640;
+  @media (max-width: 768px) {
+    --viewport: 768;
   }
 }
 
@@ -31,12 +31,116 @@
 html {
   scroll-behavior: initial;
   width: 100%;
+  font-size: 0.83vw;
+  @include sp() {
+    font-size: 16px;
+  }
 }
 
 body {
-  letter-spacing: 1.5px;
   min-height: 100%;
-  @include sp() {
+}
+
+.about__page {
+  section {
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    h2 {
+      font-family: "Hiragino Kaku Gothic ProN";
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 72px; /* 150% */
+    }
+    p {
+      font-family: "Hiragino Kaku Gothic ProN";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 42px; /* 233.333% */
+      max-width: 800px;
+    }
+  }
+}
+
+.about {
+  &__top-bg {
+    background-image: url(../img/about/about-top.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    opacity: 0;
+  }
+  &__first-bg {
+    background-image: url(../img/about/first-bg.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__second-bg {
+    background-image: url(../img/about/second-bg.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__third-bg {
+    background-image: url(../img/about/third-bg.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.inner {
+  width: 1200px;
+  margin: auto;
+}
+
+.shadow {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(0, 12, 9, 0.2);
+}
+
+.union-bg {
+  background-image: url(../img/about/union.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #e5e5e5;
+  tr {
+    &:nth-of-type(2n-1) {
+      td {
+        background-color: #f5f5f5;
+      }
+    }
+  }
+  th {
+    background: #00489d;
+    color: white;
+  }
+  td {
+  }
+  th,
+  td {
+    font-weight: 600;
+    padding: 14px 20px;
+    vertical-align: middle;
+    line-height: 2;
     font-size: 14px;
+    border: 1px solid #e5e5e5;
   }
 }
