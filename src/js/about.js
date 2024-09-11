@@ -38,13 +38,14 @@ class About {
     const sections = document.querySelectorAll("section");
     sections.forEach((section, index) => {
       this.timeline.to(section, {
+        filter: "blur(10px)",
         scrollTrigger: {
           trigger: section,
-          start: "top top",
-          markers: true,
+          start: "center top",
           scrub: true,
-
-          onUpdate: (e) => {},
+          onUpdate: (e) => {
+            console.log(e.progress);
+          },
         },
       });
     });

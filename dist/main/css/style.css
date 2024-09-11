@@ -29,7 +29,7 @@ body {
 }
 
 .about__page section {
-  height: 100vh;
+  height: 200vh;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -41,6 +41,12 @@ body {
   font-weight: 600;
   line-height: 72px; /* 150% */
 }
+@media (max-width: 1280px) {
+  .about__page section h2 {
+    font-size: 24px;
+    line-height: 2;
+  }
+}
 .about__page section p {
   font-family: "Hiragino Kaku Gothic ProN";
   font-size: 18px;
@@ -49,32 +55,44 @@ body {
   line-height: 42px; /* 233.333% */
   max-width: 800px;
 }
+@media (max-width: 1280px) {
+  .about__page section p {
+    font-size: 14px;
+    line-height: 2;
+  }
+}
+@media (max-width: 768px) {
+  .about__page section p {
+    font-size: 12px;
+    line-height: 2;
+  }
+}
 
 .about__top-bg {
   background-image: url(../img/about/about-top.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 100vh;
   opacity: 0;
 }
 .about__first-bg {
   background-image: url(../img/about/first-bg.png);
-  height: 100%;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .about__second-bg {
   background-image: url(../img/about/second-bg.png);
-  height: 100%;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .about__third-bg {
   background-image: url(../img/about/third-bg.png);
-  height: 100%;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,6 +101,17 @@ body {
 .inner {
   width: 1200px;
   margin: auto;
+}
+@media (max-width: 1280px) {
+  .inner {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
 }
 
 .shadow {
