@@ -1,6 +1,6 @@
 <?= get_header(); ?>
 <main class="about__page">
-  <section>
+  <section class="section">
     <div class="about__top-bg">
     </div>
     <h1 class="flex justify-center items-start w-full h-full absolute top-0">
@@ -11,7 +11,7 @@
       </svg>
     </h1>
   </section>
-  <section>
+  <section class="section">
     <div class="about__first-bg">
       <div class="pt-20 md:pt-[9.375rem] md:pb-0 flex gap-12 xl:gap-[100px] xl:flex-nowrap flex-wrap-reverse xl:justify-start justify-center px-5">
         <div class="w-[56.25rem] md:max-w-none max-w-[335px]">
@@ -38,7 +38,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <section class="section">
     <div class="about__second-bg">
       <div class="pt-20 md:pt-[9.375rem] md:pb-0 flex gap-12 xl:gap-[100px] xl:flex-nowrap flex-wrap-reverse xl:justify-start justify-center px-5">
         <div>
@@ -64,7 +64,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <section class="section">
     <div class="about__third-bg">
       <div class="pt-20 md:pt-[9.375rem] flex px-5 gap-12 md:gap-[100px] xl:flex-nowrap flex-wrap-reverse xl:justify-start justify-center">
         <div class="w-[56.25rem] md:max-w-none max-w-[335px]">
@@ -92,7 +92,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <section class="!h-auto">
     <div class="py-20 md:py-28 bg-white">
       <div class="inner">
         <div>

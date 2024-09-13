@@ -17,14 +17,32 @@
                             <span class="leading-none text-xs py-[10px] px-5 rounded-full bg-[#00489D] text-white">活動ブログ</span>
                             <span class="text-[#999] text-xs font-semibold"><?= the_time('Y.m.d'); ?></span>
                         </p>
-                        <h2 class="text-2base font-semibold pt-5 pb-7">
+                        <h2 class="text-xl md:text-2base font-semibold pt-5 pb-7">
                             <?= the_title() ?>
                         </h2>
                     </div>
-                    <div>
-                        <div class="blog__image"></div>
+                    <div class="mt-[90px]">
+                        <div class="blog__image">
+                            <?php if (have_rows('images')) : ?>
+                                <?php while (have_rows('images')): the_row(); ?>
+                                    <img src="<?= the_sub_field('image'); ?>">
+                                <?php endwhile; ?>
+                            <?php endif ?>
+                        </div>
                         <div class="blog__table">
-
+                            <table>
+                                <tbody>
+                                    <?php if (have_rows('結果')) : ?>
+                                        <?php while (have_rows('結果')): the_row(); ?>
+                                            <tr>
+                                                <td><?= the_sub_field('階級'); ?></td>
+                                                <td><?= the_sub_field('順位'); ?></td>
+                                                <td><?= the_sub_field('氏名'); ?></td>
+                                            </tr>
+                                        <?php endwhile; ?>
+                                    <?php endif ?>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                     <div class="mt-[100px]">

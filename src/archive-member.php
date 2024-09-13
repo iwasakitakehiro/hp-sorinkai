@@ -8,14 +8,14 @@
                         <img class="md:w-[56px] w-[28px]" src="<?= get_template_directory_uri(); ?>/img/global/key.png">
                     </span>
                     <span>
-                        <h1 class="text-xl md:text-[48px] font-bold">活動ブログ</h1>
+                        <h1 class="text-xl md:text-[48px] font-bold">会員専用ページ</h1>
                     </span>
                 </div>
                 <?php
                 $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                 $the_query = new WP_Query(array(
                     'post_status' => 'publish',
-                    'post_type' => 'blog', // ページの種類（例、page、post、カスタム投稿タイプ）
+                    'post_type' => 'member', // ページの種類（例、page、post、カスタム投稿タイプ）
                     'paged' => $paged,
                     'posts_per_page' => 1, // 表示件数
                     'orderby' => 'date',

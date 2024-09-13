@@ -35,7 +35,7 @@ class About {
   }
 
   _section() {
-    const sections = document.querySelectorAll("section");
+    const sections = document.querySelectorAll(".section");
     sections.forEach((section, index) => {
       this.timeline.to(section, {
         filter: "blur(10px)",

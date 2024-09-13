@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-    <section class="mt-[90px]">
+    <section class="mt-[70px] xl:mt-[90px]">
         <div class="relative md:h-auto h-[310px] overflow-hidden">
             <div class="slider">
                 <div class="slide">
@@ -115,148 +115,173 @@
 
         </div>
     </section>
-    <section>
-        <div class="qa pt-24 pb-[19.4375rem] mb-20">
-            <div class="inner">
-                <div class="flex items-center">
-                    <span>
-                        <img class="md:w-[35px] w-[23px]" src="<?= get_template_directory_uri(); ?>/img/top/question.png">
-                    </span>
-                    <span>
-                        <p class="text-2xl md:text-2base font-bold">よくあるご質問</p>
-                    </span>
-                </div>
-                <div class="mt-[3.75rem]">
-                    <ul>
-                        <li class="question">
-                            <p class="flex gap-5 items-center">
-                                <span>
-                                    <svg class="w-[37px] h-[33px]" viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M26.648 26.1567L29.24 29.2527C27.584 31.2687 25.208 32.3487 22.436 32.3487C18.692 32.3487 16.064 30.9807 12.176 26.8767C5.264 26.0127 0.404 20.7927 0.404 13.9527C0.404 6.46473 6.236 0.920734 14.192 0.920734C22.112 0.920734 27.98 6.42873 27.98 13.9527C27.98 19.8567 24.344 24.5367 18.98 26.2647C20.204 27.5607 21.284 28.0287 22.544 28.0287C24.092 28.0287 25.46 27.4167 26.648 26.1567ZM6.308 13.9527C6.308 18.7407 9.692 22.0167 14.192 22.0167C18.692 22.0167 22.076 18.7407 22.076 13.9527C22.076 9.16473 18.692 5.88873 14.192 5.88873C9.692 5.88873 6.308 9.16473 6.308 13.9527ZM33.3879 26.8407C31.4439 26.8407 29.8959 25.3647 29.8959 23.3127C29.8959 21.2247 31.4439 19.8567 33.3879 19.8567C35.3319 19.8567 36.8799 21.2247 36.8799 23.3127C36.8799 25.3647 35.3319 26.8407 33.3879 26.8407Z" fill="#00489D" />
-                                    </svg>
-                                </span>
-                                <span>
-                                    空手教室はどの年齢から参加できますか？
-                                </span>
-                            </p>
-                            <p>
-                                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="15" height="25" viewBox="0 0 15 25" fill="none">
-                                    <path d="M1.68652 24.1802L13.0002 12.8665L1.68652 1.55276" stroke="#E5E5E5" stroke-width="2" />
-                                </svg>
-                            </p>
-                        </li>
-                        <li class="question">
-                            <p class="flex gap-5 items-center">
-                                <span>
-                                    <svg class="w-[37px] h-[33px]" viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M26.648 26.1567L29.24 29.2527C27.584 31.2687 25.208 32.3487 22.436 32.3487C18.692 32.3487 16.064 30.9807 12.176 26.8767C5.264 26.0127 0.404 20.7927 0.404 13.9527C0.404 6.46473 6.236 0.920734 14.192 0.920734C22.112 0.920734 27.98 6.42873 27.98 13.9527C27.98 19.8567 24.344 24.5367 18.98 26.2647C20.204 27.5607 21.284 28.0287 22.544 28.0287C24.092 28.0287 25.46 27.4167 26.648 26.1567ZM6.308 13.9527C6.308 18.7407 9.692 22.0167 14.192 22.0167C18.692 22.0167 22.076 18.7407 22.076 13.9527C22.076 9.16473 18.692 5.88873 14.192 5.88873C9.692 5.88873 6.308 9.16473 6.308 13.9527ZM33.3879 26.8407C31.4439 26.8407 29.8959 25.3647 29.8959 23.3127C29.8959 21.2247 31.4439 19.8567 33.3879 19.8567C35.3319 19.8567 36.8799 21.2247 36.8799 23.3127C36.8799 25.3647 35.3319 26.8407 33.3879 26.8407Z" fill="#00489D" />
-                                    </svg>
-                                </span>
-                                <span>
-                                    レッスンスケジュールはどのようになっていますか？
-                                </span>
-                            </p>
-                            <p>
-                                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="15" height="25" viewBox="0 0 15 25" fill="none">
-                                    <path d="M1.68652 24.1802L13.0002 12.8665L1.68652 1.55276" stroke="#E5E5E5" stroke-width="2" />
-                                </svg>
-                            </p>
-                        </li>
-                        <li class="question">
-                            <p class="flex gap-5 items-center">
-                                <span>
-                                    <svg class="w-[37px] h-[33px]" viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M26.648 26.1567L29.24 29.2527C27.584 31.2687 25.208 32.3487 22.436 32.3487C18.692 32.3487 16.064 30.9807 12.176 26.8767C5.264 26.0127 0.404 20.7927 0.404 13.9527C0.404 6.46473 6.236 0.920734 14.192 0.920734C22.112 0.920734 27.98 6.42873 27.98 13.9527C27.98 19.8567 24.344 24.5367 18.98 26.2647C20.204 27.5607 21.284 28.0287 22.544 28.0287C24.092 28.0287 25.46 27.4167 26.648 26.1567ZM6.308 13.9527C6.308 18.7407 9.692 22.0167 14.192 22.0167C18.692 22.0167 22.076 18.7407 22.076 13.9527C22.076 9.16473 18.692 5.88873 14.192 5.88873C9.692 5.88873 6.308 9.16473 6.308 13.9527ZM33.3879 26.8407C31.4439 26.8407 29.8959 25.3647 29.8959 23.3127C29.8959 21.2247 31.4439 19.8567 33.3879 19.8567C35.3319 19.8567 36.8799 21.2247 36.8799 23.3127C36.8799 25.3647 35.3319 26.8407 33.3879 26.8407Z" fill="#00489D" />
-                                    </svg>
-                                </span>
-                                <span>
-                                    道場での服装はどのようにすれば良いですか？
-                                </span>
-                            </p>
-                            <p>
-                                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="15" height="25" viewBox="0 0 15 25" fill="none">
-                                    <path d="M1.68652 24.1802L13.0002 12.8665L1.68652 1.55276" stroke="#E5E5E5" stroke-width="2" />
-                                </svg>
-                            </p>
-                        </li>
-                        <li class="question">
-                            <p class="flex gap-5 items-center">
-                                <span>
-                                    <svg class="w-[37px] h-[33px]" viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M26.648 26.1567L29.24 29.2527C27.584 31.2687 25.208 32.3487 22.436 32.3487C18.692 32.3487 16.064 30.9807 12.176 26.8767C5.264 26.0127 0.404 20.7927 0.404 13.9527C0.404 6.46473 6.236 0.920734 14.192 0.920734C22.112 0.920734 27.98 6.42873 27.98 13.9527C27.98 19.8567 24.344 24.5367 18.98 26.2647C20.204 27.5607 21.284 28.0287 22.544 28.0287C24.092 28.0287 25.46 27.4167 26.648 26.1567ZM6.308 13.9527C6.308 18.7407 9.692 22.0167 14.192 22.0167C18.692 22.0167 22.076 18.7407 22.076 13.9527C22.076 9.16473 18.692 5.88873 14.192 5.88873C9.692 5.88873 6.308 9.16473 6.308 13.9527ZM33.3879 26.8407C31.4439 26.8407 29.8959 25.3647 29.8959 23.3127C29.8959 21.2247 31.4439 19.8567 33.3879 19.8567C35.3319 19.8567 36.8799 21.2247 36.8799 23.3127C36.8799 25.3647 35.3319 26.8407 33.3879 26.8407Z" fill="#00489D" />
-                                    </svg>
-                                </span>
-                                <span>
-                                    大会への参加は必須ですか？
-                                </span>
-                            </p>
-                            <p>
-                                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="15" height="25" viewBox="0 0 15 25" fill="none">
-                                    <path d="M1.68652 24.1802L13.0002 12.8665L1.68652 1.55276" stroke="#E5E5E5" stroke-width="2" />
-                                </svg>
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div>
-            <div class="inner">
-                <div class="flex items-end justify-between">
-                    <div class="flex items-center gap-5">
+    <div class="tracking-area">
+        <section>
+            <div class="qa pt-24 pb-[140px] tb:pb-[19.4375rem] mb-20">
+                <div class="inner">
+                    <div class="tracking__girl">
+                        <img src="<?= get_template_directory_uri(); ?>/img/top/girl.png">
+                    </div>
+                    <div class="tracking__man">
+                        <img src=" <?= get_template_directory_uri(); ?>/img/top/man.png">
+                    </div>
+                    <div class="flex items-center">
                         <span>
-                            <img class="w-[35px]" src="<?= get_template_directory_uri(); ?>/img/top/megaphone.png">
+                            <img class="md:w-[35px] w-[23px]" src="<?= get_template_directory_uri(); ?>/img/top/question.png">
                         </span>
                         <span>
-                            <p class="text-xl md:text-2base font-bold">お知らせ</p>
+                            <p class="text-2xl md:text-2base font-bold">よくあるご質問</p>
                         </span>
                     </div>
-                    <a class="md:hidden flex gap-[8px]" href="<?= get_home_url(); ?>/news">
-                        <span class="md:text-base text-[10px] font-semibold">お知らせをもっと見る</span>
-                        <span class="flex items-center">
-                            <svg class="w-[16px] h-[16px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
-                                <path d="M8 0C3.58169 0 0 3.58166 0 8C0 12.4183 3.58169 16 8 16C12.4183 16 16 12.4183 16 8C16 3.58166 12.4183 0 8 0ZM12.0091 8.10612L8.19681 11.7331C7.82838 12.0839 7.24572 12.0696 6.89516 11.7009C6.54459 11.3324 6.55922 10.7492 6.92741 10.3992L8.48134 8.92091H4.80016C4.29134 8.92091 3.87931 8.50884 3.87931 8.00003C3.87931 7.49122 4.29137 7.07941 4.80016 7.07941H8.48137L6.92744 5.60084C6.55925 5.25106 6.54462 4.66762 6.89519 4.29947C7.24575 3.93078 7.82841 3.91612 8.19684 4.26722L12.0091 7.89391C12.0381 7.92162 12.0544 7.95994 12.0544 8C12.0544 8.04006 12.0381 8.07837 12.0091 8.10612Z" fill="#00489D" />
-                            </svg>
-                        </span>
-                    </a>
+                    <div class="mt-[3.75rem]">
+                        <ul>
+                            <li class="question-wrap">
+                                <div class="question">
+                                    <p class="flex gap-5 items-center">
+                                        <span>
+                                            <svg class="w-[37px] h-[33px]" viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M26.648 26.1567L29.24 29.2527C27.584 31.2687 25.208 32.3487 22.436 32.3487C18.692 32.3487 16.064 30.9807 12.176 26.8767C5.264 26.0127 0.404 20.7927 0.404 13.9527C0.404 6.46473 6.236 0.920734 14.192 0.920734C22.112 0.920734 27.98 6.42873 27.98 13.9527C27.98 19.8567 24.344 24.5367 18.98 26.2647C20.204 27.5607 21.284 28.0287 22.544 28.0287C24.092 28.0287 25.46 27.4167 26.648 26.1567ZM6.308 13.9527C6.308 18.7407 9.692 22.0167 14.192 22.0167C18.692 22.0167 22.076 18.7407 22.076 13.9527C22.076 9.16473 18.692 5.88873 14.192 5.88873C9.692 5.88873 6.308 9.16473 6.308 13.9527ZM33.3879 26.8407C31.4439 26.8407 29.8959 25.3647 29.8959 23.3127C29.8959 21.2247 31.4439 19.8567 33.3879 19.8567C35.3319 19.8567 36.8799 21.2247 36.8799 23.3127C36.8799 25.3647 35.3319 26.8407 33.3879 26.8407Z" fill="#00489D" />
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            空手教室はどの年齢から参加できますか？
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="15" height="25" viewBox="0 0 15 25" fill="none">
+                                            <path d="M1.68652 24.1802L13.0002 12.8665L1.68652 1.55276" stroke="#E5E5E5" stroke-width="2" />
+                                        </svg>
+                                    </p>
+                                </div>
+                                <div class="answer">
+                                    <span class="border-t border-[#E5E5E5] h-[1px] w-full absolute top-0 m-auto left-0 right-0"></span>
+                                    <p class="flex gap-5 items-center">
+                                        <span>
+                                            <svg width="38" height="27" viewBox="0 0 38 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.816 26.0001L20.584 20.6001H8.884L6.652 26.0001H0.676L11.908 0.800105H17.668L28.936 26.0001H22.816ZM10.756 16.1721H18.748L14.752 6.52411L10.756 16.1721ZM34.4387 26.2881C32.4947 26.2881 30.9467 24.8121 30.9467 22.7601C30.9467 20.6721 32.4947 19.3041 34.4387 19.3041C36.3827 19.3041 37.9307 20.6721 37.9307 22.7601C37.9307 24.8121 36.3827 26.2881 34.4387 26.2881Z" fill="#00489D" />
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            当道場は3歳から受け入れております。 一人ひとりが無理なく学べるよう配慮しております。初歩から段階を追って指導することで、
+                                            子供たちの基本的な運動能力とともに空手の基礎をしっかりと身に付けていただけます。
+                                        </span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="question-wrap">
+                                <div class="question">
+                                    <p class="flex gap-5 items-center">
+                                        <span>
+                                            <svg class="w-[37px] h-[33px]" viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M26.648 26.1567L29.24 29.2527C27.584 31.2687 25.208 32.3487 22.436 32.3487C18.692 32.3487 16.064 30.9807 12.176 26.8767C5.264 26.0127 0.404 20.7927 0.404 13.9527C0.404 6.46473 6.236 0.920734 14.192 0.920734C22.112 0.920734 27.98 6.42873 27.98 13.9527C27.98 19.8567 24.344 24.5367 18.98 26.2647C20.204 27.5607 21.284 28.0287 22.544 28.0287C24.092 28.0287 25.46 27.4167 26.648 26.1567ZM6.308 13.9527C6.308 18.7407 9.692 22.0167 14.192 22.0167C18.692 22.0167 22.076 18.7407 22.076 13.9527C22.076 9.16473 18.692 5.88873 14.192 5.88873C9.692 5.88873 6.308 9.16473 6.308 13.9527ZM33.3879 26.8407C31.4439 26.8407 29.8959 25.3647 29.8959 23.3127C29.8959 21.2247 31.4439 19.8567 33.3879 19.8567C35.3319 19.8567 36.8799 21.2247 36.8799 23.3127C36.8799 25.3647 35.3319 26.8407 33.3879 26.8407Z" fill="#00489D" />
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            レッスンスケジュールはどのようになっていますか？
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="15" height="25" viewBox="0 0 15 25" fill="none">
+                                            <path d="M1.68652 24.1802L13.0002 12.8665L1.68652 1.55276" stroke="#E5E5E5" stroke-width="2" />
+                                        </svg>
+                                    </p>
+                                </div>
+                                <div class="answer">
+                                    <span class="border-t border-[#E5E5E5] h-[1px] w-full absolute top-0 m-auto left-0 right-0"></span>
+                                    <p class="flex gap-5 items-center">
+                                        <span>
+                                            <svg width="38" height="27" viewBox="0 0 38 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.816 26.0001L20.584 20.6001H8.884L6.652 26.0001H0.676L11.908 0.800105H17.668L28.936 26.0001H22.816ZM10.756 16.1721H18.748L14.752 6.52411L10.756 16.1721ZM34.4387 26.2881C32.4947 26.2881 30.9467 24.8121 30.9467 22.7601C30.9467 20.6721 32.4947 19.3041 34.4387 19.3041C36.3827 19.3041 37.9307 20.6721 37.9307 22.7601C37.9307 24.8121 36.3827 26.2881 34.4387 26.2881Z" fill="#00489D" />
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            レッスンは週に数回、年齢と経験に応じたクラス分けを行っています。詳しいスケジュールはウェブサイトでご確認ください。
+                                        </span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="question-wrap">
+                                <div class="question">
+                                    <p class="flex gap-5 items-center">
+                                        <span>
+                                            <svg class="w-[37px] h-[33px]" viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M26.648 26.1567L29.24 29.2527C27.584 31.2687 25.208 32.3487 22.436 32.3487C18.692 32.3487 16.064 30.9807 12.176 26.8767C5.264 26.0127 0.404 20.7927 0.404 13.9527C0.404 6.46473 6.236 0.920734 14.192 0.920734C22.112 0.920734 27.98 6.42873 27.98 13.9527C27.98 19.8567 24.344 24.5367 18.98 26.2647C20.204 27.5607 21.284 28.0287 22.544 28.0287C24.092 28.0287 25.46 27.4167 26.648 26.1567ZM6.308 13.9527C6.308 18.7407 9.692 22.0167 14.192 22.0167C18.692 22.0167 22.076 18.7407 22.076 13.9527C22.076 9.16473 18.692 5.88873 14.192 5.88873C9.692 5.88873 6.308 9.16473 6.308 13.9527ZM33.3879 26.8407C31.4439 26.8407 29.8959 25.3647 29.8959 23.3127C29.8959 21.2247 31.4439 19.8567 33.3879 19.8567C35.3319 19.8567 36.8799 21.2247 36.8799 23.3127C36.8799 25.3647 35.3319 26.8407 33.3879 26.8407Z" fill="#00489D" />
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            道場での服装はどのようにすれば良いですか？
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="15" height="25" viewBox="0 0 15 25" fill="none">
+                                            <path d="M1.68652 24.1802L13.0002 12.8665L1.68652 1.55276" stroke="#E5E5E5" stroke-width="2" />
+                                        </svg>
+                                    </p>
+                                </div>
+                                <div class="answer">
+                                    <span class="border-t border-[#E5E5E5] h-[1px] w-full absolute top-0 m-auto left-0 right-0"></span>
+                                    <p class="flex gap-5 items-center">
+                                        <span>
+                                            <svg width="38" height="27" viewBox="0 0 38 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.816 26.0001L20.584 20.6001H8.884L6.652 26.0001H0.676L11.908 0.800105H17.668L28.936 26.0001H22.816ZM10.756 16.1721H18.748L14.752 6.52411L10.756 16.1721ZM34.4387 26.2881C32.4947 26.2881 30.9467 24.8121 30.9467 22.7601C30.9467 20.6721 32.4947 19.3041 34.4387 19.3041C36.3827 19.3041 37.9307 20.6721 37.9307 22.7601C37.9307 24.8121 36.3827 26.2881 34.4387 26.2881Z" fill="#00489D" />
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            初回は動きやすい服装で構いませんが、入会後は指定の空手着を着用していただきます。
+                                        </span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="question-wrap">
+                                <div class="question">
+                                    <p class="flex gap-5 items-center">
+                                        <span>
+                                            <svg class="w-[37px] h-[33px]" viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M26.648 26.1567L29.24 29.2527C27.584 31.2687 25.208 32.3487 22.436 32.3487C18.692 32.3487 16.064 30.9807 12.176 26.8767C5.264 26.0127 0.404 20.7927 0.404 13.9527C0.404 6.46473 6.236 0.920734 14.192 0.920734C22.112 0.920734 27.98 6.42873 27.98 13.9527C27.98 19.8567 24.344 24.5367 18.98 26.2647C20.204 27.5607 21.284 28.0287 22.544 28.0287C24.092 28.0287 25.46 27.4167 26.648 26.1567ZM6.308 13.9527C6.308 18.7407 9.692 22.0167 14.192 22.0167C18.692 22.0167 22.076 18.7407 22.076 13.9527C22.076 9.16473 18.692 5.88873 14.192 5.88873C9.692 5.88873 6.308 9.16473 6.308 13.9527ZM33.3879 26.8407C31.4439 26.8407 29.8959 25.3647 29.8959 23.3127C29.8959 21.2247 31.4439 19.8567 33.3879 19.8567C35.3319 19.8567 36.8799 21.2247 36.8799 23.3127C36.8799 25.3647 35.3319 26.8407 33.3879 26.8407Z" fill="#00489D" />
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            大会への参加は必須ですか？
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="15" height="25" viewBox="0 0 15 25" fill="none">
+                                            <path d="M1.68652 24.1802L13.0002 12.8665L1.68652 1.55276" stroke="#E5E5E5" stroke-width="2" />
+                                        </svg>
+                                    </p>
+                                </div>
+                                <div class="answer">
+                                    <span class="border-t border-[#E5E5E5] h-[1px] w-full absolute top-0 m-auto left-0 right-0"></span>
+                                    <p class="flex gap-5 items-center">
+                                        <span>
+                                            <svg width="38" height="27" viewBox="0 0 38 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.816 26.0001L20.584 20.6001H8.884L6.652 26.0001H0.676L11.908 0.800105H17.668L28.936 26.0001H22.816ZM10.756 16.1721H18.748L14.752 6.52411L10.756 16.1721ZM34.4387 26.2881C32.4947 26.2881 30.9467 24.8121 30.9467 22.7601C30.9467 20.6721 32.4947 19.3041 34.4387 19.3041C36.3827 19.3041 37.9307 20.6721 37.9307 22.7601C37.9307 24.8121 36.3827 26.2881 34.4387 26.2881Z" fill="#00489D" />
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            大会参加は任意です。自己成長と経験を深めたい方は積極的に参加をお勧めしますが、強制ではありません。
+                                        </span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <ul class="flex xl:flex-now gap-7">
-                        <?php
-                        $posts = get_posts("post_type=news&posts_per_page=4");
-                        if ($posts) : ?>
-                            <?php
-                            foreach ($posts as $post) {
-                                setup_postdata($post);
-                                $terms = get_the_terms($post->ID, 'news_category');
-                            ?>
-                                <li class="inline-block border-b border-[#E5E5E5] w-full max-w-[1000px]">
-                                    <a href="<?= the_permalink(); ?>">
-                                        <div class="mt-7 bg-white px-5 py-5 md:py-7 md:flex items-center gap-5">
-                                            <p class=" leading-normal flex justify-start md:justify-between items-center gap-[10px]">
-                                                <span class="leading-none text-xs py-[10px] px-5 rounded-full bg-[#00489D] text-white">お知らせ</span>
-                                                <span class="text-[#999] text-xs font-semibold"><?= the_time('Y.m.d'); ?></span>
-                                            </p>
-                                            <p class="text-sm font-semibold md:mt-0 mt-5"><?= the_title(); ?></p>
-                                        </div>
-                                    </a>
-                                </li>
-                            <?php
-                            }
-                            wp_reset_postdata();
-                            ?>
-                        <?php else : ?>
-                            <div class="news__empty">
-                                <p>新着情報はまだありません</p>
-                            </div>
-                        <?php endif; ?>
-                    </ul>
-                </div>
-                <div class="flex justify-end mt-[50px]">
-                    <div>
-                        <a class="md:flex gap-[8px] hidden" href="<?= get_home_url(); ?>/news">
+            </div>
+        </section>
+        <section>
+            <div>
+                <div class="inner">
+                    <div class="flex items-end justify-between">
+                        <div class="flex items-center gap-5">
+                            <span>
+                                <img class="w-[35px]" src="<?= get_template_directory_uri(); ?>/img/top/megaphone.png">
+                            </span>
+                            <span>
+                                <p class="text-xl md:text-2base font-bold">お知らせ</p>
+                            </span>
+                        </div>
+                        <a class="md:hidden flex gap-[8px]" href="<?= get_home_url(); ?>/news">
                             <span class="md:text-base text-[10px] font-semibold">お知らせをもっと見る</span>
                             <span class="flex items-center">
                                 <svg class="w-[16px] h-[16px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
@@ -265,9 +290,53 @@
                             </span>
                         </a>
                     </div>
+                    <div>
+                        <ul class="flex xl:flex-now gap-7">
+                            <?php
+                            $posts = get_posts("post_type=news&posts_per_page=4");
+                            if ($posts) : ?>
+                                <?php
+                                foreach ($posts as $post) {
+                                    setup_postdata($post);
+                                    $terms = get_the_terms($post->ID, 'news_category');
+                                ?>
+                                    <li class="inline-block border-b border-[#E5E5E5] w-full max-w-[1000px]">
+                                        <a href="<?= the_permalink(); ?>">
+                                            <div class="mt-7 bg-white px-5 py-5 md:py-7 md:flex items-center gap-5">
+                                                <p class=" leading-normal flex justify-start md:justify-between items-center gap-[10px]">
+                                                    <span class="leading-none text-xs py-[10px] px-5 rounded-full bg-[#00489D] text-white">お知らせ</span>
+                                                    <span class="text-[#999] text-xs font-semibold"><?= the_time('Y.m.d'); ?></span>
+                                                </p>
+                                                <p class="text-sm font-semibold md:mt-0 mt-5"><?= the_title(); ?></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                <?php
+                                }
+                                wp_reset_postdata();
+                                ?>
+                            <?php else : ?>
+                                <div class="news__empty">
+                                    <p>新着情報はまだありません</p>
+                                </div>
+                            <?php endif; ?>
+                        </ul>
+                    </div>
+                    <div class="flex justify-end mt-[50px]">
+                        <div>
+                            <a class="md:flex gap-[8px] hidden" href="<?= get_home_url(); ?>/news">
+                                <span class="md:text-base text-[10px] font-semibold">お知らせをもっと見る</span>
+                                <span class="flex items-center">
+                                    <svg class="w-[16px] h-[16px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                                        <path d="M8 0C3.58169 0 0 3.58166 0 8C0 12.4183 3.58169 16 8 16C12.4183 16 16 12.4183 16 8C16 3.58166 12.4183 0 8 0ZM12.0091 8.10612L8.19681 11.7331C7.82838 12.0839 7.24572 12.0696 6.89516 11.7009C6.54459 11.3324 6.55922 10.7492 6.92741 10.3992L8.48134 8.92091H4.80016C4.29134 8.92091 3.87931 8.50884 3.87931 8.00003C3.87931 7.49122 4.29137 7.07941 4.80016 7.07941H8.48137L6.92744 5.60084C6.55925 5.25106 6.54462 4.66762 6.89519 4.29947C7.24575 3.93078 7.82841 3.91612 8.19684 4.26722L12.0091 7.89391C12.0381 7.92162 12.0544 7.95994 12.0544 8C12.0544 8.04006 12.0381 8.07837 12.0091 8.10612Z" fill="#00489D" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </main>
 <?php get_footer(); ?>

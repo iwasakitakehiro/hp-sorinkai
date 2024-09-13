@@ -16,7 +16,7 @@ function slickBlog() {
   $(".slider-blog").slick({
     autoplay: false,
     arrows: false,
-    slidesToShow: 3,
+    slidesToShow: 1,
   });
 }
 
