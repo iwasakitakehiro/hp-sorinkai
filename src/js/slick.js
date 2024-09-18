@@ -13,11 +13,15 @@ function slick() {
 }
 
 function slickBlog() {
-  $(".slider-blog").slick({
-    autoplay: false,
-    arrows: false,
-    slidesToShow: 1,
-  });
+  if (window.innerWidth <= 768) {
+    $(".slider-blog").slick({
+      autoplay: false,
+      arrows: false,
+      infinite: false,
+
+      slidesToShow: 1,
+    });
+  }
 }
 
 export { slick, slickBlog };

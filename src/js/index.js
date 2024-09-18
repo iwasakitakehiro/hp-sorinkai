@@ -1,14 +1,14 @@
 import About from "./about";
 import question from "./qa";
 import hmb from "./humburgermenu";
-import tracking from "./tracking";
+import topAbout from "./top-about";
 import { slick, slickBlog } from "./slick";
 
 window.addEventListener("load", init());
 
 function init() {
   hmb();
-  tracking();
+  topAbout();
   question();
   slick();
   slickBlog();

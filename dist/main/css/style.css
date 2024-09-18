@@ -14,19 +14,19 @@
   }
 }
 
-tml {
+html {
   scroll-behavior: initial;
   width: 100%;
   font-size: 0.83vw;
 }
 @media (max-width: 768px) {
-  tml {
+  html {
     font-size: 16px;
   }
 }
 
 body {
-  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  font-family: "hiragino-kaku-gothic-pron", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
   color: #111;
   min-height: 100%;
 }
@@ -80,6 +80,29 @@ header {
   background-size: cover;
 }
 
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+header nav a {
+  transition: all 0.3s;
+}
+header nav a:hover {
+  color: #00489d;
+}
+header .header__member {
+  transition: all 0.3s;
+}
+header .header__member:hover {
+  background-color: #0e1010;
+}
+header .header__contact {
+  transition: all 0.3s;
+}
+header .header__contact:hover {
+  background-color: #003c80;
+}
+
 .link-button {
   display: flex;
   width: 295px;
@@ -97,17 +120,36 @@ header {
   font-style: normal;
   font-weight: 600;
   line-height: 16px; /* 100% */
+  transition: all 0.3s;
+}
+.link-button svg {
+  transition: all 0.3s;
+}
+.link-button svg path {
+  transition: all 0.3s;
 }
 
 .parallax {
-  background-image: url(../img/top/parallax.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
+  height: 1200px;
+  position: relative;
 }
 @media (max-width: 768px) {
   .parallax {
+    height: 400px;
+  }
+}
+.parallax .parallax-content {
+  background-image: url(../img/top/parallax.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: sticky;
+  width: 100%;
+  top: 0;
+}
+@media (max-width: 768px) {
+  .parallax .parallax-content {
     height: 200px;
   }
 }
@@ -120,30 +162,6 @@ header {
 }
 .qa .inner {
   position: relative;
-}
-.qa .inner .tracking__girl {
-  position: absolute;
-  left: -290px;
-  bottom: -380px;
-}
-@media (max-width: 1280px) {
-  .qa .inner .tracking__girl {
-    left: 0;
-    width: 101px;
-    bottom: -147px;
-  }
-}
-.qa .inner .tracking__man {
-  position: absolute;
-  right: -290px;
-  bottom: -360px;
-}
-@media (max-width: 1280px) {
-  .qa .inner .tracking__man {
-    right: 0;
-    width: 91px;
-    bottom: -165px;
-  }
 }
 
 .question-wrap {
@@ -193,6 +211,50 @@ header {
   }
 }
 
+.tracking-area {
+  position: relative;
+  margin-top: -600px;
+}
+@media (max-width: 768px) {
+  .tracking-area {
+    margin-top: -200px;
+  }
+}
+.tracking-area .tracking-contents {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-top: -100vh;
+}
+.tracking-area .tracking-contents .tracking__girl {
+  position: absolute;
+  left: 0px;
+  bottom: -50px;
+}
+@media (max-width: 1280px) {
+  .tracking-area .tracking-contents .tracking__girl {
+    left: 0;
+    bottom: -10px;
+    width: 101px;
+  }
+}
+.tracking-area .tracking-contents .tracking__man {
+  position: absolute;
+  right: 0px;
+  bottom: -50px;
+}
+@media (max-width: 1280px) {
+  .tracking-area .tracking-contents .tracking__man {
+    right: 0;
+    bottom: -10px;
+    width: 91px;
+  }
+}
+
 .contact-bg {
   background-image: url(../img/global/contact-bg.png);
   background-position: center top;
@@ -230,10 +292,10 @@ header {
 }
 .about__page section p {
   font-family: "Hiragino Kaku Gothic ProN";
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 42px; /* 233.333% */
+  line-height: 2.2;
   max-width: 800px;
 }
 @media (max-width: 1280px) {
@@ -538,4 +600,91 @@ footer ul {
   width: 100%;
   height: 1px;
   border: 1px solid white;
+}
+
+.news-wrap {
+  min-height: 600px;
+}
+@media (max-width: 768px) {
+  .news-wrap {
+    min-height: 300px;
+  }
+}
+
+.page__schedule {
+  background-image: url(../img/global/schedule-bg.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.-mt-130 {
+  margin-top: -130px;
+}
+
+.pb-130 {
+  padding-bottom: 130px;
+}
+
+.zindex {
+  position: relative;
+  z-index: 5;
+}
+
+.about__page .logo {
+  margin-top: calc(-100vh + 90px);
+}
+
+.about-contents {
+  position: relative;
+}
+.about-contents .bg {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/top/about-bg-hover.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-contents .inner {
+  position: relative;
+  z-index: 2;
+}
+
+.contact {
+  position: relative;
+}
+.contact .link-button {
+  border: 1px solid white;
+}
+.contact:hover .contact-bg__hover {
+  opacity: 1;
+}
+.contact:hover .link-button {
+  background-color: #00489d;
+  color: white;
+}
+.contact:hover .link-button svg {
+  fill: #00489d;
+}
+.contact:hover .link-button svg path {
+  fill: white;
+}
+.contact .contact-bg__hover {
+  border-radius: 10px;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/global/contact-hover.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: opacity 0.3s;
 }

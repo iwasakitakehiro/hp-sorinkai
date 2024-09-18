@@ -1,8 +1,12 @@
-<section>
+<?php if (is_home()) : ?>
+    <div class="-mt-130"></div>
+<?php endif; ?>
+<section class="relative">
     <div class="mt-12 contact-bg pt-[210px] pb-[100px]">
         <div class="inner">
-            <div class="contact p-12">
-                <div class="text-white">
+            <a href="<?= get_home_url(); ?>/contact" class="contact p-12 inline-block w-full border-[5px] border-white">
+                <div class="contact-bg__hover"></div>
+                <div class="text-white relative z-[2]">
                     <div class="text-center">
                         <p class="text-2xl md:text-[48px] font-semibold">
                             無料体験・見学随時募集
@@ -15,27 +19,31 @@
                         </p>
                     </div>
                     <div>
-                        <a class="link-button mx-auto" href="<?= get_template_directory_uri(); ?>/contact">
+                        <button class="link-button mx-auto">
                             <span>お問い合わせはこちら</span>
                             <span>
-                                <svg class="w-[17px] h-[16px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 16" fill="none">
-                                    <path d="M8.5 0C4.08169 0 0.5 3.58166 0.5 8C0.5 12.4183 4.08169 16 8.5 16C12.9183 16 16.5 12.4183 16.5 8C16.5 3.58166 12.9183 0 8.5 0ZM12.5091 8.10612L8.69681 11.7331C8.32838 12.0839 7.74572 12.0696 7.39516 11.7009C7.04459 11.3324 7.05922 10.7492 7.42741 10.3992L8.98134 8.92091H5.30016C4.79134 8.92091 4.37931 8.50884 4.37931 8.00003C4.37931 7.49122 4.79137 7.07941 5.30016 7.07941H8.98137L7.42744 5.60084C7.05925 5.25106 7.04462 4.66762 7.39519 4.29947C7.74575 3.93078 8.32841 3.91612 8.69684 4.26722L12.5091 7.89391C12.5381 7.92162 12.5544 7.95994 12.5544 8C12.5544 8.04006 12.5381 8.07837 12.5091 8.10612Z" fill="#00489D" />
+                                <svg class="w-[17px] h-[16px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 16">
+                                    <path class="fill-[#00489D]" d="M8.5 0C4.08169 0 0.5 3.58166 0.5 8C0.5 12.4183 4.08169 16 8.5 16C12.9183 16 16.5 12.4183 16.5 8C16.5 3.58166 12.9183 0 8.5 0ZM12.5091 8.10612L8.69681 11.7331C8.32838 12.0839 7.74572 12.0696 7.39516 11.7009C7.04459 11.3324 7.05922 10.7492 7.42741 10.3992L8.98134 8.92091H5.30016C4.79134 8.92091 4.37931 8.50884 4.37931 8.00003C4.37931 7.49122 4.79137 7.07941 5.30016 7.07941H8.98137L7.42744 5.60084C7.05925 5.25106 7.04462 4.66762 7.39519 4.29947C7.74575 3.93078 8.32841 3.91612 8.69684 4.26722L12.5091 7.89391C12.5381 7.92162 12.5544 7.95994 12.5544 8C12.5544 8.04006 12.5381 8.07837 12.5091 8.10612Z" />
                                 </svg>
                             </span>
-                        </a>
+                        </button>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </section>
 <section>
     <div class="flex justify-center flex-wrap gap-5 md:gap-20 py-12">
         <div>
-            <img src="<?= get_template_directory_uri(); ?>/img/global/instagram.png" alt="蒼凛会インスタグラム">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img target="_blank" href="#" class="hover:opacity-80 duration-300" src="<?= get_template_directory_uri(); ?>/img/global/instagram.png" alt="蒼凛会インスタグラム">
+            </a>
         </div>
         <div>
-            <img src="<?= get_template_directory_uri(); ?>/img/global/youtube.png" alt="蒼凛会youtube">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img class="hover:opacity-80 duration-300" src="<?= get_template_directory_uri(); ?>/img/global/youtube.png" alt="蒼凛会youtube">
+            </a>
         </div>
     </div>
 </section>
@@ -46,7 +54,7 @@
                 <img class="w-[180px] md:w-[246px] mx-auto" src="<?= get_template_directory_uri(); ?>/img/global/footer-logo.png" alt="剛柔流空手道　蒼凛会ロゴ">
             </div>
             <div>
-                <ul class="xl:flex gap-[30px] justify-center text-sm text-white hidden">
+                <ul class="font-semibold xl:flex gap-[30px] justify-center text-sm text-white hidden">
                     <li>
                         <a href="<?= get_home_url(); ?>/">トップ</a>
                     </li>
